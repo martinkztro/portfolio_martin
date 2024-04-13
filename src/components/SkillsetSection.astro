@@ -100,7 +100,7 @@
   function showStackImages() {
     stack.forEach((item) => {
       const img = document.createElement("img");
-      img.src = `public/icons/${item.icon}.svg`;
+      img.src = `../public/icons/${item.icon}.svg`;
       img.alt = item.text;
       img.classList.add("m-scroll__icon");
       slideContainer?.appendChild(img);
