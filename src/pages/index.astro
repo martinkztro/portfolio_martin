@@ -1,0 +1,24 @@
+---
+import PageLayout from "@layouts/PageLayout.astro";
+import AboutSection from "@components/AboutSection.astro";
+import ProjectsSection from "@components/ProjectsSection.astro";
+import HeroSection from "@components/HeroSection.astro";
+import StarsParticles from "@components/StarsParticles.astro";
+import SkillsetSection from "@components/SkillsetSection.astro";
+import ContactSection from "@components/ContactSection.astro";
+---
+
+<PageLayout title="Portfolio Web">
+
+  <StarsParticles />
+  <HeroSection />
+
+  <div class="relative bg-black">
+    <div class="mx-auto max-w-[900px] p-5 space-y-24 pb-16">
+      <AboutSection />
+      <ProjectsSection />
+      <SkillsetSection />
+      <ContactSection />
+    </div>
+  </div>
+</PageLayout>

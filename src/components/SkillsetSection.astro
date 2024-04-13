@@ -1,0 +1,111 @@
+---
+
+---
+
+<section id="skillset" class="animate">
+  <div class="flex flex-col justify-center my-auto">
+    <p class="font-semibold text-black dark:text-white text-3xl mb-14">Skillset</p>
+    <div class="m-scroll">
+      <div class="m-scroll__title">
+        <div id="slide-container">
+          <p>Skill</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<script>
+  const stack = [
+  {
+    id: 1,
+    text: "React",
+    icon: "react",
+  },
+  {
+    id: 2,
+    text: "React Native",
+    icon: "react-native",
+  },
+  {
+    id: 3,
+    text: "TailwindCSS",
+    icon: "tailwind",
+  },
+  {
+    id: 4,
+    text: "Typescript",
+    icon: "typescript",
+  },
+  {
+    id: 5,
+    text: "Javascript",
+    icon: "javascript",
+  },
+  {
+    id: 6,
+    text: "HTML",
+    icon: "html",
+  },
+  {
+    id: 7,
+    text: "CSS",
+    icon: "css",
+  },
+  {
+    id: 8,
+    text: "NextJS",
+    icon: "next",
+  },
+  {
+    id: 9,
+    text: "MySQL",
+    icon: "mysql",
+  },
+  {
+    id: 10,
+    text: "SASS",
+    icon: "sass",
+  },
+  {
+    id: 11,
+    text: "Figma",
+    icon: "figma",
+  },
+  {
+    id: 12,
+    text: "Supabase",
+    icon: "supabase",
+  },
+  {
+    id: 13,
+    text: "Vercel",
+    icon: "vercel",
+  },
+  {
+    id: 14,
+    text: "Git",
+    icon: "git",
+  },
+  {
+    id: 15,
+    text: "PHP",
+    icon: "php",
+  },
+  
+  ];
+
+  const slideContainer = document.getElementById("slide-container");
+
+  function showStackImages() {
+    stack.forEach((item) => {
+      const img = document.createElement("img");
+      img.src = `public/icons/${item.icon}.svg`;
+      img.alt = item.text;
+      img.classList.add("m-scroll__icon");
+      slideContainer?.appendChild(img);
+    });
+  }
+
+  showStackImages();
+</script>
